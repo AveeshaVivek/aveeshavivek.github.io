@@ -3514,4 +3514,14 @@ body.absolute_header .breadcrumb_area {
 	border-radius: 50%;
 }
 
+::selection {
+  background-color: var(--tj-theme-primary); /* Bright blue selection */
+  color: var(--tj-white); /* Light text on selection */
+}
+
+::-moz-selection {
+  background-color: var(--tj-theme-primary);
+  color: var(--tj-white);
+}
+
 /* END: Modal CSS */
