@@ -8,12 +8,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 
-::selection {
-  background-color: #FDD33C;
-  color: #101010;
-  -webkit-text-fill-color: #101010;
-}
-
 :root {
 	/* ----------------------------------
    @font family declaration
@@ -104,6 +98,17 @@
 ::-webkit-scrollbar-corner {
 	background: transparent;
 }
+
+::selection {
+  background-color: var(--tj-theme-primary); /* Bright blue selection */
+  color: var(--tj-white); /* Light text on selection */
+}
+
+::-moz-selection {
+  background-color: var(--tj-theme-primary);
+  color: var(--tj-white);
+}
+
 
 html,
 body {
